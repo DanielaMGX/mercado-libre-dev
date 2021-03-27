@@ -25,7 +25,7 @@ class SearchBar extends React.Component {
                                 type="text" 
                                 value={this.state.word} 
                                 onChange={e => this.setState({word: e.target.value})} 
-                                placeholder="Nunca dejes de buscar">
+                                placeholder="Ingresa aquí lo que deseas buscar. Ej: Libros">
                             </input>
                             <input className="container-search-btn" type="image" src={SearchImg} alt="search-btn"/>    
                         </div>

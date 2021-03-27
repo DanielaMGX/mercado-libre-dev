@@ -30,7 +30,7 @@ class Search extends React.Component {
         return (
         <div className="full-card">
             {
-            this.state.items.slice(0,4).map((item) => {
+            this.state.items.slice(0,100).map((item) => {
             return ( 
                     <div key={item.id}>
                         <div className="bg-card">
