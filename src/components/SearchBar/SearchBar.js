@@ -2,14 +2,15 @@ import React from 'react';
 import './SearchBar.scss';
 import SearchImg from './lupa.png';
 import logo from './Logo-MercadoLibre-Codo-a-Codo-2.png';
+import { createBrowserHistory } from 'history';
 
 
 class SearchBar extends React.Component {
 
-    state = { word: ''};
+    state = { word: ""};
 
     onFormSubmit = event => {
-        console.log(this.state.word)
+        createBrowserHistory().push('/search/'+this.state.word);
     }
 
     render() {
